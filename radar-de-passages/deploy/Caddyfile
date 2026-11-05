@@ -1,0 +1,4 @@
+{$RADAR_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy radar:8003
+}

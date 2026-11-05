@@ -1,0 +1,233 @@
+{
+ "templates": {
+  "laptops": {
+   "category": "tecnologia",
+   "subcategory": "laptops",
+   "include": "laptop|notebook|portatil|macbook"
+  },
+  "televisores": {
+   "category": "tecnologia",
+   "subcategory": "televisores",
+   "include": "televisor|smart-?tv|television|-tv-|/tv"
+  },
+  "consolas": {
+   "category": "tecnologia",
+   "subcategory": "consolas",
+   "include": "consola|playstation|ps5|xbox|nintendo|switch"
+  },
+  "videojuegos": {
+   "category": "tecnologia",
+   "subcategory": "videojuegos",
+   "include": "videojuego|video-game|juego-para"
+  },
+  "celulares": {
+   "category": "tecnologia",
+   "subcategory": "celulares",
+   "include": "celular|smartphone|iphone|galaxy|telefono-movil"
+  },
+  "monitores": {
+   "category": "tecnologia",
+   "subcategory": "monitores",
+   "include": "monitor"
+  },
+  "audio": {
+   "category": "tecnologia",
+   "subcategory": "audio",
+   "include": "audifono|auricular|parlante|speaker|headphone|soundbar|barra-de-sonido"
+  },
+  "perifericos": {
+   "category": "tecnologia",
+   "subcategory": "perifericos",
+   "include": "teclado|mouse|raton|keyboard|webcam"
+  },
+  "almacenamiento": {
+   "category": "tecnologia",
+   "subcategory": "almacenamiento",
+   "include": "disco-duro|ssd|nvme|pendrive|hard-drive|memoria-usb"
+  },
+  "redes": {
+   "category": "tecnologia",
+   "subcategory": "redes",
+   "include": "router|access-point|switch-de-red|wifi"
+  },
+  "gpu": {
+   "category": "tecnologia",
+   "subcategory": "componentes_gpu",
+   "include": "tarjeta-de-video|tarjeta-grafica|geforce|radeon|rtx|gtx|graphics-card|video-card"
+  },
+  "cpu": {
+   "category": "tecnologia",
+   "subcategory": "componentes_cpu",
+   "include": "procesador|processor|ryzen|core-i[3579]|intel-core"
+  },
+  "ram": {
+   "category": "tecnologia",
+   "subcategory": "componentes_ram",
+   "include": "memoria-ram|ram-|ddr4|ddr5|memory-kit"
+  },
+  "placas": {
+   "category": "tecnologia",
+   "subcategory": "componentes_placas",
+   "include": "placa-madre|motherboard|mainboard|tarjeta-madre"
+  },
+  "fuentes": {
+   "category": "tecnologia",
+   "subcategory": "componentes_fuentes",
+   "include": "fuente-de-poder|power-supply|psu"
+  },
+  "refrigeracion_pc": {
+   "category": "tecnologia",
+   "subcategory": "componentes_refrigeracion",
+   "include": "cooler|disipador|refrigeracion-liquida|ventilador-pc"
+  },
+  "refrigeracion": {
+   "category": "electrodomesticos",
+   "subcategory": "refrigeracion",
+   "include": "refrigerador|refrigeradora|nevera|heladera|frigorifico|congelador|refrigerator|freezer"
+  },
+  "lavado": {
+   "category": "electrodomesticos",
+   "subcategory": "lavado",
+   "include": "lavadora|secadora|lavasecadora|washer|dryer"
+  },
+  "cocina": {
+   "category": "electrodomesticos",
+   "subcategory": "cocina",
+   "include": "cocina|horno|microondas|campana|microwave|oven|cooktop"
+  },
+  "climatizacion": {
+   "category": "electrodomesticos",
+   "subcategory": "climatizacion",
+   "include": "aire-acondicionado|ventilador|calefactor|climatizador|air-conditioner|heater"
+  },
+  "pequenos": {
+   "category": "electrodomesticos",
+   "subcategory": "pequenos",
+   "include": "licuadora|freidora|air-?fryer|cafetera|batidora|aspiradora|plancha|hervidor|blender"
+  },
+  "construccion": {
+   "category": "juguetes",
+   "subcategory": "construccion",
+   "include": "lego|bloques|building"
+  },
+  "munecas": {
+   "category": "juguetes",
+   "subcategory": "munecas",
+   "include": "muneca|barbie|doll"
+  },
+  "vehiculos": {
+   "category": "juguetes",
+   "subcategory": "vehiculos",
+   "include": "hot-wheels|carro-de-juguete|toy-car|rc-car|vehiculo-de-juguete"
+  },
+  "juegos_de_mesa": {
+   "category": "juguetes",
+   "subcategory": "juegos_de_mesa",
+   "include": "juego-de-mesa|rompecabezas|board-game|puzzle"
+  },
+  "juguetes": {
+   "category": "juguetes",
+   "subcategory": "otros",
+   "include": "juguete|toy|peluche|plush"
+  },
+  "abarrotes": {
+   "category": "alimentos",
+   "subcategory": "abarrotes",
+   "include": "arroz|aceite|azucar|fideo|atun|harina|conserva|cereal|pasta"
+  },
+  "bebidas": {
+   "category": "alimentos",
+   "subcategory": "bebidas",
+   "include": "gaseosa|cerveza|vino|agua-mineral|jugo|beer|wine|juice"
+  },
+  "frescos": {
+   "category": "alimentos",
+   "subcategory": "frescos",
+   "include": "carne|pollo|pescado|fruta|verdura|lacteo|leche|queso|yogurt"
+  },
+  "snacks": {
+   "category": "alimentos",
+   "subcategory": "snacks",
+   "include": "galleta|snack|chocolate|cookie|candy|chips"
+  },
+  "ropa_hombre": {
+   "category": "ropa",
+   "subcategory": "hombre",
+   "include": "hombre|/men|caballero"
+  },
+  "ropa_mujer": {
+   "category": "ropa",
+   "subcategory": "mujer",
+   "include": "mujer|women|dama"
+  },
+  "ropa_ninos": {
+   "category": "ropa",
+   "subcategory": "ninos",
+   "include": "nino|nina|kids|bebe|infantil"
+  },
+  "calzado": {
+   "category": "ropa",
+   "subcategory": "calzado",
+   "include": "zapatilla|zapato|bota|sandalia|sneaker|shoe"
+  },
+  "deportiva": {
+   "category": "ropa",
+   "subcategory": "deportiva",
+   "include": "deportiv|running|training|sport"
+  }
+ },
+ "groups": {
+  "@pc": [
+   "gpu",
+   "cpu",
+   "ram",
+   "placas",
+   "fuentes",
+   "refrigeracion_pc",
+   "almacenamiento",
+   "monitores",
+   "perifericos"
+  ],
+  "@tech": [
+   "laptops",
+   "televisores",
+   "consolas",
+   "celulares",
+   "monitores",
+   "audio",
+   "perifericos",
+   "almacenamiento",
+   "redes",
+   "gpu",
+   "cpu",
+   "ram"
+  ],
+  "@electro": [
+   "refrigeracion",
+   "lavado",
+   "cocina",
+   "climatizacion",
+   "pequenos"
+  ],
+  "@juguetes": [
+   "construccion",
+   "munecas",
+   "vehiculos",
+   "juegos_de_mesa",
+   "juguetes"
+  ],
+  "@alimentos": [
+   "abarrotes",
+   "bebidas",
+   "frescos",
+   "snacks"
+  ],
+  "@ropa": [
+   "ropa_hombre",
+   "ropa_mujer",
+   "ropa_ninos",
+   "calzado",
+   "deportiva"
+  ]
+ }
+}

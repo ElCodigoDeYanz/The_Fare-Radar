@@ -1,0 +1,11 @@
+# Caso propio: Radar de Passages
+
+Comparar precios exige mantener iguales fechas, viajeros, moneda, itinerario y condiciones (o, en una tienda, producto, vendedor, estado y disponibilidad). Este proyecto implementa ese modelo para vuelos, buses y productos de tienda, y lo hace correr solo, en un servidor independiente, sin delatarse ni castigar a los sitios que consulta.
+
+Cada búsqueda persiste primero su intento y después observaciones válidas sin sobrescribir. La identidad de una observación es su contenido: ver el mismo precio otra vez es la misma observación (solo se extiende su vigencia) y un precio distinto es otra. Las estadísticas requieren condiciones equivalentes completas.
+
+La v2 añadió la operación: un scheduler que sortea el siguiente momento de cada seguimiento, espacia las peticiones por sitio, se detiene ante bloqueos y garantiza una sola instancia activa. La v3 añadió **escala y criterio**: en vez de un enlace por producto, se vigila una tienda entera por su sitemap o su categoría; las alertas dejan de ser solo «llegó a mi precio» y pasan a cuatro prioridades calculadas contra la mediana del historial propio y contra otras tiendas (con una prioridad máxima reservada para lo extraordinario y cautelas contra errores de precio); y un detector central de restricciones registra cada rechazo y detiene el sitio.
+
+La decisión de diseño más importante fue **no** intentar esquivar bloqueos: sin rotación de IP, sin proxies para «seguir», sin simular navegadores, sin resolver CAPTCHAs. Si una fuente rechaza la automatización, se detiene y se busca una vía autorizada (API, feed o proveedor de datos). La cortesía (espaciado, `robots.txt` según el RFC 9309, identificación honesta, pausa) es lo que se sostiene en el tiempo.
+
+Honestidad como método: el proyecto distingue lo probado (núcleo, scheduler, descubrimiento, detector, API e interfaz, con pruebas y con 19 mutaciones de salvaguardas) de lo no comprobado (ninguna tienda, aerolínea ni API real fue contactada, Telegram real, imagen Docker sin construir en el entorno de desarrollo). Los hallazgos reales que dejaron las pruebas (por ejemplo, que `urllib.robotparser` no cumple el RFC 9309, o que un `NaN` en un precio rompía un conector) se corrigieron y quedaron con prueba de regresión.

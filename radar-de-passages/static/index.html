@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Radar de Passages: monitor de precios de pasajes y productos con historial verificable y alertas trazables."
+    />
+    <title>Radar de Passages · Yanz Studio Systèmes</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script type="module" src="/static/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Ir al contenido</a>
+    <aside class="sidebar">
+      <a class="brand" href="/"
+        ><span class="brand-icon">y.</span
+        ><span>YANZ<span class="brand-sub">STUDIO SYSTÈMES</span></span></a
+      >
+      <div class="workspace-label">WORKSPACE / 03</div>
+      <div class="project-name">
+        <span class="project-symbol">↗</span> Passages
+        <span class="version">v2.0</span>
+      </div>
+      <nav aria-label="Navegación">
+        <a class="selected" href="#main"><span>◫</span> Vista general</a
+        ><a href="#create"><span>＋</span> Crear seguimiento</a
+        ><a href="#monitor"><span>◉</span> Estado del monitor</a
+        ><a href="#watches"><span>◎</span> Mis seguimientos</a
+        ><a href="#history"><span>≡</span> Observaciones</a
+        ><a href="#alerts"><span>↗</span> Alertas</a
+        ><a href="#catalogs"><span>▤</span> Catálogos</a
+        ><a href="#compare"><span>⇄</span> Comparación</a
+        ><a href="#incidents"><span>!</span> Incidentes</a
+        ><a href="#resources"><span>▥</span> Recursos</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="status-dot"></div>
+        <span id="source-label">Cargando…</span>
+        <p>Caso demostrativo propio<br />El Código de Yanz</p>
+      </div>
+    </aside>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          Monitoreo <span class="slash">/</span>
+          <strong>Radar de Passages</strong>
+        </div>
+        <div class="top-right">
+          <span class="pill" id="mode-pill">…</span><span class="avatar">Y</span>
+        </div>
+      </header>
+      <main id="main">
+        <div class="page-top">
+          <div>
+            <div class="eyebrow">
+              <span class="tiny-line"></span> SEGUIMIENTO DE TARIFAS
+            </div>
+            <h1>Un precio. Todo su contexto.</h1>
+            <p class="intro">
+              Pasajes aéreos y de bus, alimentos, ropa, juguetes,
+              electrodomésticos y tecnología: cambios de precio bajo las mismas
+              condiciones, con historial verificable.
+            </p>
+          </div>
+          <button class="button secondary" id="demo" type="button" hidden>
+            ↗ &nbsp; Crear ejemplo sintético
+          </button>
+        </div>
+        <div class="notice" id="notice" role="status" aria-live="polite">
+          Cargando el estado del monitor…
+        </div>
+        <section class="stats" aria-label="Estado del radar">
+          <article class="stat">
+            <div>Seguimientos <span>◎</span></div>
+            <strong id="watch-count">—</strong>
+            <p>Condiciones independientes</p>
+          </article>
+          <article class="stat">
+            <div>Con observación vigente <span class="green">✓</span></div>
+            <strong id="fresh-count">—</strong>
+            <p>Vigencia del ejemplo sintético</p>
+          </article>
+          <article class="stat">
+            <div>Última consulta fallida <span class="orange">!</span></div>
+            <strong id="error-count">—</strong>
+            <p>Sin simular un precio actualizado</p>
+          </article>
+          <article class="stat">
+            <div>Alertas registradas <span>↗</span></div>
+            <strong id="alert-count">—</strong>
+            <p id="alert-caption">Envíos reales desactivados por defecto</p>
+          </article>
+        </section>
+        <div class="content-grid">
+          <section class="panel" id="create">
+            <div class="panel-title">
+              <div>
+                <h2>Configura tu seguimiento</h2>
+                <p id="target-help">
+                  El objetivo es el total para todos los pasajeros.
+                </p>
+              </div>
+              <span class="step">01 / CONDICIONES</span>
+            </div>
+            <form id="create-form">
+              <div class="form-grid two">
+                <label
+                  >Tipo<select id="kind">
+                    <option value="flight">Vuelo</option>
+                    <option value="bus">Bus</option>
+                    <option value="product">Producto de tienda</option>
+                  </select></label
+                ><label>Fuente<select id="provider"></select></label>
+              </div>
+              <label class="wide"
+                >Nombre (opcional)<input
+                  id="label"
+                  type="text"
+                  maxlength="80"
+                  placeholder="p. ej. Laptop 16 GB en tienda X"
+              /></label>
+              <fieldset class="kind-group" data-kind="flight">
+                <div class="form-grid">
+                  <label
+                    >Origen (IATA)<input
+                      id="origin"
+                      type="text"
+                      required
+                      pattern="[A-Za-z]{3}"
+                      maxlength="3"
+                      value="LIM" /></label
+                  ><label
+                    >Destino (IATA)<input
+                      id="destination"
+                      type="text"
+                      required
+                      pattern="[A-Za-z]{3}"
+                      maxlength="3"
+                      value="MAD" /></label
+                  ><label
+                    >Escalas máximas<select id="max-connections">
+                      <option value="0">Solo directo</option>
+                      <option value="1" selected>Hasta 1</option>
+                      <option value="2">Hasta 2</option>
+                    </select></label
+                  >
+                </div>
+                <div class="form-grid two">
+                  <label
+                    >Salida<input id="departure" type="date" required /></label
+                  ><label
+                    >Vuelta (opcional)<input id="return-date" type="date"
+                  /></label>
+                </div>
+                <div class="form-grid">
+                  <label
+                    >Adultos<input
+                      type="number"
+                      id="adults"
+                      min="1"
+                      max="9"
+                      value="1"
+                      required /></label
+                  ><label
+                    >Niños<input
+                      type="number"
+                      id="children"
+                      min="0"
+                      max="8"
+                      value="0"
+                      required /></label
+                  ><label
+                    >Infantes<input
+                      type="number"
+                      id="infants"
+                      min="0"
+                      max="8"
+                      value="0"
+                      required
+                  /></label>
+                </div>
+                <div class="form-grid two">
+                  <label
+                    >Cabina<select id="cabin">
+                      <option value="ECONOMY">Económica</option>
+                      <option value="PREMIUM_ECONOMY">
+                        Económica prémium
+                      </option>
+                      <option value="BUSINESS">Ejecutiva</option>
+                    </select></label
+                  ><label
+                    >Aerolíneas (códigos, opcional)<input
+                      id="airlines"
+                      type="text"
+                      placeholder="LA, H2, AV"
+                  /></label>
+                </div>
+              </fieldset>
+              <fieldset class="kind-group" data-kind="bus" hidden disabled>
+                <div class="form-grid two">
+                  <label
+                    >Origen<input
+                      id="bus-origin"
+                      type="text"
+                      required
+                      minlength="2"
+                      maxlength="60"
+                      value="Lima" /></label
+                  ><label
+                    >Destino<input
+                      id="bus-destination"
+                      type="text"
+                      required
+                      minlength="2"
+                      maxlength="60"
+                      value="Arequipa"
+                  /></label>
+                </div>
+                <div class="form-grid">
+                  <label
+                    >Salida<input id="bus-departure" type="date" required
+                  /></label>
+                  <label
+                    >Vuelta (opcional)<input id="bus-return" type="date"
+                  /></label>
+                  <label
+                    >Pasajeros<input
+                      type="number"
+                      id="bus-passengers"
+                      min="1"
+                      max="9"
+                      value="1"
+                      required
+                  /></label>
+                </div>
+                <label class="wide"
+                  >Empresas (opcional, separadas por coma)<input
+                    id="bus-operators"
+                    type="text"
+                    placeholder="Cruz del Sur, Oltursa"
+                /></label>
+              </fieldset>
+              <fieldset class="kind-group" data-kind="product" hidden disabled>
+                <label class="wide"
+                  >URL del producto (https)<input
+                    id="product-url"
+                    type="url"
+                    required
+                    maxlength="500"
+                    placeholder="https://tienda.ejemplo/producto/123"
+                /></label>
+                <div class="form-grid">
+                  <label
+                    >Categoría<select id="category"></select></label
+                  ><label>Subcategoría<select id="subcategory"></select></label
+                  ><label
+                    >SKU (si la página tiene varias variantes)<input
+                      id="product-sku"
+                      type="text"
+                      maxlength="80"
+                  /></label>
+                </div>
+              </fieldset>
+              <div class="form-grid">
+                <label
+                  >Moneda<select id="currency">
+                    <option>USD</option>
+                    <option>PEN</option>
+                    <option>EUR</option>
+                  </select></label
+                ><label
+                  >Modo de alerta<select id="alert-mode">
+                    <option value="smart">Inteligente (por prioridad)</option>
+                    <option value="target">Precio objetivo</option>
+                    <option value="both">Ambos</option>
+                  </select></label
+                ><label id="target-label"
+                  >Precio total objetivo<input
+                    id="target"
+                    type="text"
+                    inputmode="decimal"
+                    pattern="[0-9]+(\.[0-9]{1,2})?"
+                    value="350.00" /></label
+                ><label
+                  >Alertas<select id="channel">
+                    <option value="simulation">Simulación (sin envío)</option>
+                    <option value="telegram">Telegram</option>
+                  </select></label
+                >
+              </div>
+              <p class="hint" id="mode-help"></p>
+              <p class="hint" id="create-hint">
+                Podrás ajustar objetivo, canal y activación desde «Configurar».
+              </p>
+              <button
+                class="button primary full"
+                type="submit"
+                id="create-button"
+              >
+                Crear seguimiento <span>→</span>
+              </button>
+            </form>
+          </section>
+          <section class="panel overview" id="monitor">
+            <div class="panel-title">
+              <div>
+                <h2>Estado del monitor</h2>
+                <p>Qué fuentes están activas y cómo se espacian las consultas.</p>
+              </div>
+              <span class="step">PROGRAMADOR</span>
+            </div>
+            <div class="source-body">
+              <span class="source-symbol">↗</span>
+              <h3 id="mode-title">…</h3>
+              <p id="mode-text"></p>
+              <ul id="status-list"></ul>
+              <div id="domain-list"></div>
+              <div class="source-warning" id="capacity-warning" hidden></div>
+            </div>
+            <div class="panel-footer" id="mode-footer"></div>
+          </section>
+        </div>
+        <section class="panel section-space" id="watches">
+          <div class="panel-title">
+            <div>
+              <h2>Mis seguimientos</h2>
+              <p id="watches-help">
+                Cada seguimiento se revisa solo, en un momento aleatorio dentro
+                del rango configurado.
+              </p>
+            </div>
+            <span class="step">HISTORIAL INMUTABLE</span>
+          </div>
+          <div class="form-grid two filters">
+            <label>Tipo<select id="filter-kind"></select></label>
+            <label>Categoría<select id="filter-category"></select></label>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Seguimiento</th>
+                  <th>Fechas / moneda</th>
+                  <th>Último precio válido</th>
+                  <th>Consulta y próxima revisión</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="watch-rows">
+                <tr>
+                  <td colspan="5" class="table-empty">
+                    Crea un seguimiento o carga un ejemplo.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel section-space" id="configuration" hidden>
+          <div class="panel-title">
+            <div>
+              <h2>Configurar alertas</h2>
+              <p id="config-caption"></p>
+            </div>
+          </div>
+          <form id="config-form">
+            <div class="form-grid">
+              <label
+                >Modo de alerta<select id="config-mode">
+                  <option value="smart">Inteligente (por prioridad)</option>
+                  <option value="target">Precio objetivo</option>
+                  <option value="both">Ambos</option>
+                </select></label
+              ><label
+                >Objetivo total (vacío = conservar)<input
+                  id="config-target"
+                  type="text"
+                  inputmode="decimal" /></label
+              ><label
+                >Canal<select id="config-channel">
+                  <option value="simulation">Simulación (sin envío)</option>
+                  <option value="telegram">Telegram</option>
+                </select></label
+              ><label class="checkbox-label"
+                ><input id="config-enabled" type="checkbox" /> Alertas
+                activadas</label
+              >
+            </div>
+            <p class="hint">
+              Cooldown de 30 minutos (una alerta de mayor prioridad lo salta).
+              Telegram no se envía desde esta pantalla:
+              requiere habilitación, credenciales y ejecución explícita del
+              comando documentado.
+            </p>
+            <button id="config-save" class="button primary" type="submit">
+              Guardar configuración
+            </button>
+          </form>
+        </section>
+        <section class="panel section-space" id="history">
+          <div class="panel-title">
+            <div>
+              <h2>Observaciones de precio</h2>
+              <p id="history-caption">
+                Selecciona «Historial» en un seguimiento.
+              </p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Consulta UTC</th>
+                  <th>Total / moneda</th>
+                  <th>Estado</th>
+                  <th>Variación comparable</th>
+                  <th>Condiciones y procedencia</th>
+                </tr>
+              </thead>
+              <tbody id="observation-rows">
+                <tr>
+                  <td colspan="5" class="table-empty">
+                    Los precios conservan sus condiciones; nunca se
+                    sobrescriben.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pager">
+            <button id="prev" class="button secondary" disabled>
+              ← Anterior</button
+            ><span id="page-label">Sin selección</span
+            ><button id="next" class="button secondary" disabled>
+              Siguiente →
+            </button>
+          </div>
+        </section>
+        <section class="panel section-space">
+          <div class="panel-title">
+            <div>
+              <h2>Registro de consultas</h2>
+              <p>
+                También conserva errores y consultas sin ofertas. Mismo
+                seguimiento y página del historial.
+              </p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Inicio UTC</th>
+                  <th>Estado</th>
+                  <th>Detalle</th>
+                </tr>
+              </thead>
+              <tbody id="query-rows">
+                <tr>
+                  <td colspan="3" class="table-empty">
+                    Sin seguimiento seleccionado.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel section-space" id="alerts">
+          <div class="panel-title">
+            <div>
+              <h2>Registro de alertas</h2>
+              <p>Una misma observación no crea dos alertas.</p>
+            </div>
+            <span class="step">OUTBOX</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha UTC</th>
+                  <th>Prioridad</th>
+                  <th>Canal</th>
+                  <th>Estado</th>
+                  <th>Mensaje y motivo</th>
+                </tr>
+              </thead>
+              <tbody id="alert-rows">
+                <tr>
+                  <td colspan="5" class="table-empty">
+                    Se registran alertas cuando el precio vigente cumple el
+                    objetivo o cae bajo su referencia histórica.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel section-space" id="catalogs">
+          <div class="panel-title">
+            <div>
+              <h2>Catálogos y tiendas</h2>
+              <p>
+                Indica una categoría o el sitemap de una tienda: el monitor crea
+                los seguimientos por ti, con tope por catálogo y por tienda.
+              </p>
+            </div>
+            <span class="step">DESCUBRIMIENTO</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tienda / enlace</th>
+                  <th>Modo</th>
+                  <th>Estado</th>
+                  <th>Seguimientos</th>
+                  <th>Próximo barrido</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="catalog-rows">
+                <tr>
+                  <td colspan="6" class="table-empty">Sin catálogos.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <form id="catalog-form" class="mini-form" hidden>
+            <div class="form-grid">
+              <label
+                >Enlace de categoría o sitemap<input
+                  id="catalog-url"
+                  type="url"
+                  required
+                  placeholder="https://tienda.example/laptops" /></label
+              ><label
+                >Tipo<select id="catalog-mode">
+                  <option value="listing">Página de categoría</option>
+                  <option value="sitemap">Sitemap</option>
+                </select></label
+              ><label>Categoría<select id="catalog-category" required></select></label
+              ><label
+                >Subcategoría<select id="catalog-subcategory"></select></label
+              ><label
+                >Máx. productos<input
+                  id="catalog-max"
+                  type="number"
+                  min="1"
+                  max="500"
+                  value="25" /></label
+              ><label
+                >Moneda<select id="catalog-currency">
+                  <option>PEN</option>
+                  <option>USD</option>
+                  <option>EUR</option>
+                </select></label
+              >
+            </div>
+            <label class="wide"
+              >Patrón de enlaces de producto (opcional, expresión regular)<input
+                id="catalog-regex"
+                type="text"
+                maxlength="200"
+                placeholder="/p/|/producto/"
+            /></label>
+            <p class="hint">
+              Solo tiendas permitidas en el servidor. Los productos creados usan
+              alertas inteligentes (no tienen un objetivo propio).
+            </p>
+            <button class="button primary" id="catalog-save" type="submit">
+              Añadir catálogo
+            </button>
+          </form>
+          <details class="conditions" id="sources-details">
+            <summary>
+              Fuentes incluidas en el proyecto (<span id="sources-count">0</span>)
+            </summary>
+            <p class="hint">
+              Son sugerencias sin verificar contra el sitio real. Se activan en
+              el servidor con RADAR_ENABLED_SOURCES; lee los términos de cada
+              sitio antes. Buses, aerolíneas y agencias aparecen sin conector.
+            </p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Fuente</th>
+                    <th>Tipo</th>
+                    <th>País</th>
+                    <th>Dominio</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody id="source-rows"></tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+        <section class="panel section-space" id="compare">
+          <div class="panel-title">
+            <div>
+              <h2>Comparación entre tiendas</h2>
+              <p>
+                Solo el mismo producto (GTIN válido, o marca + código de
+                fabricante), misma moneda y condición. Sin stock: se lista, no
+                se compara.
+              </p>
+            </div>
+            <span class="step">MISMO PRODUCTO</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Tiendas (de la más barata a la más cara)</th>
+                  <th>Diferencia</th>
+                </tr>
+              </thead>
+              <tbody id="compare-rows">
+                <tr>
+                  <td colspan="3" class="table-empty">
+                    Aún no hay productos presentes en dos o más tiendas.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel section-space" id="incidents">
+          <div class="panel-title">
+            <div>
+              <h2>Incidentes de acceso</h2>
+              <p>
+                Cada rechazo de un sitio (403, 429, CAPTCHA, acceso denegado,
+                inicio de sesión) queda registrado y detiene las consultas a ese
+                sitio. El monitor no lo esquiva.
+              </p>
+            </div>
+            <span class="step">REGISTRO</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha UTC</th>
+                  <th>Gravedad</th>
+                  <th>Sitio</th>
+                  <th>Tipo</th>
+                  <th>Acción</th>
+                  <th>Detalle</th>
+                </tr>
+              </thead>
+              <tbody id="incident-rows">
+                <tr>
+                  <td colspan="6" class="table-empty">Sin incidentes.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel section-space" id="resources">
+          <div class="panel-title">
+            <div>
+              <h2>Recursos y salidas de red</h2>
+              <p>
+                Cuánto consume el monitor y por dónde sale cada sitio. Cada
+                dominio usa una sola salida; si se bloquea no se cambia a otra.
+              </p>
+            </div>
+            <span class="step">SERVIDOR</span>
+          </div>
+          <div class="source-body">
+            <ul id="resource-list"></ul>
+            <div id="egress-list"></div>
+          </div>
+        </section>
+        <footer>
+          <span
+            >Yanz Studio Systèmes <span class="slash">/</span> El Código de
+            Yanz</span
+          ><span>Monitor de precios · sin reservas ni pagos</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+# Self-hosted (VPS / home server):
+#   cp .env.example .env   # then edit: set RADAR_ADMIN_PASSWORD at least
+#   docker compose up -d --build
+#   open http://SERVER:8003   (plain HTTP: use the TLS profile below before exposing it)
+#
+# With automatic HTTPS (needs a domain pointing at this server, ports 80/443 open):
+#   RADAR_DOMAIN=radar.example.com docker compose --profile tls up -d --build
+#
+# With a headless browser for stores that paint prices with JavaScript (>= 1 GB RAM):
+#   WITH_BROWSER=1 docker compose up -d --build
+#
+# Pull a prebuilt image instead of building (see docs/despliegue.md, section 4):
+#   RADAR_IMAGE=ghcr.io/YOU/radar-de-passages:latest docker compose pull && docker compose up -d
+#
+# Maintenance commands run as the unprivileged user so the database files keep their owner:
+#   docker compose exec -u radar radar python -m radar.main --status
+#
+# Run ONE replica only: the database is a single SQLite file and the scheduler holds a lease.
+services:
+  radar:
+    build:
+      context: .
+      args:
+        WITH_BROWSER: ${WITH_BROWSER:-0}
+    image: ${RADAR_IMAGE:-radar-de-passages:local}
+    init: true
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:8003:8003"   # local only; Caddy (tls profile) publishes it over HTTPS
+    volumes:
+      - radar-data:/data
+    stop_grace_period: 20s
+
+  caddy:
+    image: caddy:2
+    profiles: ["tls"]
+    restart: unless-stopped
+    depends_on: [radar]
+    environment:
+      RADAR_DOMAIN: ${RADAR_DOMAIN:?set RADAR_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  radar-data:
+  caddy-data:
+  caddy-config:

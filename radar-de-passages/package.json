@@ -1,0 +1,13 @@
+{
+  "name": "radar-de-passages-ui",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "python3 run.py",
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}

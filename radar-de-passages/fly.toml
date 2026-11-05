@@ -1,0 +1,42 @@
+# Fly.io deployment (NOT tested from this repo's authoring environment: review before use).
+#   fly launch --no-deploy --copy-config      # pick a unique app name and region
+#   fly volumes create radar_data --size 1    # persistent disk for SQLite
+#   fly secrets set RADAR_ADMIN_PASSWORD='...' RADAR_CONTACT='you@example.com'
+#   fly deploy
+#   fly scale count 1                          # ONE machine only (SQLite + single scheduler)
+#
+# Cost (Fly's published prices, checked 2026-11-04 for iad/ewr; other regions may differ):
+# shared-cpu-1x 256 MB US$2.19/month, 512 MB US$3.69, 1 GB US$6.70; volume US$0.15 per GB-month;
+# outbound data US$0.02/GB in North America and Europe. Machines must stay on 24/7 for the monitor to work.
+# Memory: the server measured ~53 MB idle and ~70 MB under simulated load, so 256 MB works for ordinary
+# pages; 512 MB leaves room for large pages (3 MB cap each). A headless browser needs >= 1 GB.
+app = "radar-de-passages-CHANGE-ME"
+primary_region = "gru"
+
+[build]
+
+[env]
+  PORT = "8003"
+  RADAR_DB = "/data/radar.sqlite3"
+
+[mounts]
+  source = "radar_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8003
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = false
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = "20s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/api/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

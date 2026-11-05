@@ -1,0 +1,674 @@
+{
+ "sources": [
+  {
+   "id": "cruzdelsur-pe",
+   "name": "Cruz del Sur",
+   "kind": "bus",
+   "domain": "cruzdelsur.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "oltursa-pe",
+   "name": "Oltursa",
+   "kind": "bus",
+   "domain": "oltursa.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "civa-pe",
+   "name": "Civa",
+   "kind": "bus",
+   "domain": "civa.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "moviltours-pe",
+   "name": "Movil Tours",
+   "kind": "bus",
+   "domain": "moviltours.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "tepsa-pe",
+   "name": "Tepsa",
+   "kind": "bus",
+   "domain": "tepsa.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "linea-pe",
+   "name": "Transportes Línea",
+   "kind": "bus",
+   "domain": "transporteslinea.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "soyuz-pe",
+   "name": "Soyuz",
+   "kind": "bus",
+   "domain": "soyuz.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "excluciva-pe",
+   "name": "Excluciva",
+   "kind": "bus",
+   "domain": "excluciva.com",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "redbus-pe",
+   "name": "redBus Perú",
+   "kind": "bus",
+   "domain": "redbus.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "pasajebus-pe",
+   "name": "PasajeBus",
+   "kind": "bus",
+   "domain": "pasajebus.com",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "busbud",
+   "name": "Busbud",
+   "kind": "bus",
+   "domain": "busbud.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "API solo para socios (verificado 01-11-2026)."
+  },
+  {
+   "id": "omio",
+   "name": "Omio",
+   "kind": "bus",
+   "domain": "omio.com",
+   "country": "ES",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "turbus-cl",
+   "name": "Turbus",
+   "kind": "bus",
+   "domain": "turbus.cl",
+   "country": "CL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "pullman-cl",
+   "name": "Pullman Bus",
+   "kind": "bus",
+   "domain": "pullman.cl",
+   "country": "CL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "andesmar-ar",
+   "name": "Andesmar",
+   "kind": "bus",
+   "domain": "andesmar.com",
+   "country": "AR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "flechabus-ar",
+   "name": "Flecha Bus",
+   "kind": "bus",
+   "domain": "flechabus.com.ar",
+   "country": "AR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "bolivariano-co",
+   "name": "Expreso Bolivariano",
+   "kind": "bus",
+   "domain": "bolivariano.com.co",
+   "country": "CO",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: el precio sale de una búsqueda dinámica (origen/destino/fecha), no de un catálogo. Requiere API oficial/feed o un adaptador escrito contra la respuesta real (docs/conectores.md)."
+  },
+  {
+   "id": "latam-air",
+   "name": "LATAM",
+   "kind": "airline",
+   "domain": "latam.com",
+   "country": "CL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "sky-air",
+   "name": "SKY Airline",
+   "kind": "airline",
+   "domain": "skyairline.com",
+   "country": "CL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "jetsmart-air",
+   "name": "JetSMART",
+   "kind": "airline",
+   "domain": "jetsmart.com",
+   "country": "CL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "avianca-air",
+   "name": "Avianca",
+   "kind": "airline",
+   "domain": "avianca.com",
+   "country": "CO",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "copa-air",
+   "name": "Copa Airlines",
+   "kind": "airline",
+   "domain": "copaair.com",
+   "country": "PA",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "aeromexico-air",
+   "name": "Aeroméxico",
+   "kind": "airline",
+   "domain": "aeromexico.com",
+   "country": "MX",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "viva-air",
+   "name": "Viva Aerobus",
+   "kind": "airline",
+   "domain": "vivaair.com",
+   "country": "MX",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "volaris-air",
+   "name": "Volaris",
+   "kind": "airline",
+   "domain": "volaris.com",
+   "country": "MX",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "aerolineas-air",
+   "name": "Aerolíneas Argentinas",
+   "kind": "airline",
+   "domain": "aerolineas.com.ar",
+   "country": "AR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "flybondi-air",
+   "name": "Flybondi",
+   "kind": "airline",
+   "domain": "flybondi.com",
+   "country": "AR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "gol-air",
+   "name": "GOL",
+   "kind": "airline",
+   "domain": "voegol.com.br",
+   "country": "BR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "azul-air",
+   "name": "Azul",
+   "kind": "airline",
+   "domain": "voeazul.com.br",
+   "country": "BR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "arajet-air",
+   "name": "Arajet",
+   "kind": "airline",
+   "domain": "arajet.com",
+   "country": "DO",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "aa-air",
+   "name": "American Airlines",
+   "kind": "airline",
+   "domain": "aa.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "delta-air",
+   "name": "Delta",
+   "kind": "airline",
+   "domain": "delta.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "united-air",
+   "name": "United",
+   "kind": "airline",
+   "domain": "united.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "jetblue-air",
+   "name": "JetBlue",
+   "kind": "airline",
+   "domain": "jetblue.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "spirit-air",
+   "name": "Spirit",
+   "kind": "airline",
+   "domain": "spirit.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "southwest-air",
+   "name": "Southwest",
+   "kind": "airline",
+   "domain": "southwest.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "aircanada-air",
+   "name": "Air Canada",
+   "kind": "airline",
+   "domain": "aircanada.com",
+   "country": "CA",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "iberia-air",
+   "name": "Iberia",
+   "kind": "airline",
+   "domain": "iberia.com",
+   "country": "ES",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "aireuropa-air",
+   "name": "Air Europa",
+   "kind": "airline",
+   "domain": "aireuropa.com",
+   "country": "ES",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "vueling-air",
+   "name": "Vueling",
+   "kind": "airline",
+   "domain": "vueling.com",
+   "country": "ES",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "airfrance-air",
+   "name": "Air France",
+   "kind": "airline",
+   "domain": "airfrance.com",
+   "country": "FR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "klm-air",
+   "name": "KLM",
+   "kind": "airline",
+   "domain": "klm.com",
+   "country": "NL",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "lufthansa-air",
+   "name": "Lufthansa",
+   "kind": "airline",
+   "domain": "lufthansa.com",
+   "country": "DE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "britishairways-air",
+   "name": "British Airways",
+   "kind": "airline",
+   "domain": "britishairways.com",
+   "country": "GB",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "tap-air",
+   "name": "TAP Air Portugal",
+   "kind": "airline",
+   "domain": "flytap.com",
+   "country": "PT",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "ita-air",
+   "name": "ITA Airways",
+   "kind": "airline",
+   "domain": "ita-airways.com",
+   "country": "IT",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "swiss-air",
+   "name": "SWISS",
+   "kind": "airline",
+   "domain": "swiss.com",
+   "country": "CH",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "ryanair-air",
+   "name": "Ryanair",
+   "kind": "airline",
+   "domain": "ryanair.com",
+   "country": "IE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "easyjet-air",
+   "name": "easyJet",
+   "kind": "airline",
+   "domain": "easyjet.com",
+   "country": "GB",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "wizz-air",
+   "name": "Wizz Air",
+   "kind": "airline",
+   "domain": "wizzair.com",
+   "country": "HU",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "emirates-air",
+   "name": "Emirates",
+   "kind": "airline",
+   "domain": "emirates.com",
+   "country": "AE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "qatar-air",
+   "name": "Qatar Airways",
+   "kind": "airline",
+   "domain": "qatarairways.com",
+   "country": "QA",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "turkish-air",
+   "name": "Turkish Airlines",
+   "kind": "airline",
+   "domain": "turkishairlines.com",
+   "country": "TR",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "etihad-air",
+   "name": "Etihad",
+   "kind": "airline",
+   "domain": "etihad.com",
+   "country": "AE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "singapore-air",
+   "name": "Singapore Airlines",
+   "kind": "airline",
+   "domain": "singaporeair.com",
+   "country": "SG",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "cathay-air",
+   "name": "Cathay Pacific",
+   "kind": "airline",
+   "domain": "cathaypacific.com",
+   "country": "HK",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "qantas-air",
+   "name": "Qantas",
+   "kind": "airline",
+   "domain": "qantas.com",
+   "country": "AU",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: tarifas dinámicas por búsqueda; sin API pública gratuita verificada. Ver docs/vuelos.md."
+  },
+  {
+   "id": "despegar-pe-ota",
+   "name": "Despegar Perú",
+   "kind": "agency",
+   "domain": "despegar.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "viajesfalabella-pe-ota",
+   "name": "Viajes Falabella",
+   "kind": "agency",
+   "domain": "viajesfalabella.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "turismocity-pe-ota",
+   "name": "Turismocity",
+   "kind": "agency",
+   "domain": "turismocity.com.pe",
+   "country": "PE",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "kayak-ota",
+   "name": "KAYAK",
+   "kind": "agency",
+   "domain": "kayak.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "skyscanner-ota",
+   "name": "Skyscanner",
+   "kind": "agency",
+   "domain": "skyscanner.com",
+   "country": "GB",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "expedia-ota",
+   "name": "Expedia",
+   "kind": "agency",
+   "domain": "expedia.com",
+   "country": "US",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "edreams-ota",
+   "name": "eDreams",
+   "kind": "agency",
+   "domain": "edreams.com",
+   "country": "ES",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "kiwi-ota",
+   "name": "Kiwi.com",
+   "kind": "agency",
+   "domain": "kiwi.com",
+   "country": "CZ",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "trip-ota",
+   "name": "Trip.com",
+   "kind": "agency",
+   "domain": "trip.com",
+   "country": "SG",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  },
+  {
+   "id": "momondo-ota",
+   "name": "momondo",
+   "kind": "agency",
+   "domain": "momondo.com",
+   "country": "DK",
+   "connector": null,
+   "status": "sin_conector",
+   "note": "Sin conector: agregador de tarifas; sus términos suelen prohibir la automatización sin acuerdo."
+  }
+ ]
+}

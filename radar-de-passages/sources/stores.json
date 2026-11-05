@@ -1,0 +1,1162 @@
+{
+ "currency_by_country": {
+  "PE": "PEN",
+  "CL": "CLP",
+  "CO": "COP",
+  "MX": "MXN",
+  "AR": "ARS",
+  "BR": "BRL",
+  "ES": "EUR",
+  "US": "USD"
+ },
+ "sources": [
+  {
+   "id": "falabella-pe",
+   "name": "Falabella Perú",
+   "kind": "store",
+   "domain": "falabella.com.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa",
+    "@alimentos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ripley-pe",
+   "name": "Ripley Perú",
+   "kind": "store",
+   "domain": "ripley.com.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "oechsle-pe",
+   "name": "Oechsle",
+   "kind": "store",
+   "domain": "oechsle.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "plazavea-pe",
+   "name": "Plaza Vea",
+   "kind": "store",
+   "domain": "plazavea.com.pe",
+   "country": "PE",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "laptops",
+    "televisores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "metro-pe",
+   "name": "Metro",
+   "kind": "store",
+   "domain": "metro.pe",
+   "country": "PE",
+   "cats": [
+    "@alimentos",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "wong-pe",
+   "name": "Wong",
+   "kind": "store",
+   "domain": "wong.pe",
+   "country": "PE",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "televisores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "tottus-pe",
+   "name": "Tottus",
+   "kind": "store",
+   "domain": "tottus.com.pe",
+   "country": "PE",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "vivanda-pe",
+   "name": "Vivanda",
+   "kind": "store",
+   "domain": "vivanda.com.pe",
+   "country": "PE",
+   "cats": [
+    "@alimentos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "promart-pe",
+   "name": "Promart",
+   "kind": "store",
+   "domain": "promart.pe",
+   "country": "PE",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "sodimac-pe",
+   "name": "Sodimac Perú",
+   "kind": "store",
+   "domain": "sodimac.com.pe",
+   "country": "PE",
+   "cats": [
+    "@electro",
+    "televisores",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "coolbox-pe",
+   "name": "Coolbox",
+   "kind": "store",
+   "domain": "coolbox.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "hiraoka-pe",
+   "name": "Hiraoka",
+   "kind": "store",
+   "domain": "hiraoka.com.pe",
+   "country": "PE",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "lacuracao-pe",
+   "name": "La Curacao",
+   "kind": "store",
+   "domain": "lacuracao.pe",
+   "country": "PE",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "efe-pe",
+   "name": "Tiendas EFE",
+   "kind": "store",
+   "domain": "efe.com.pe",
+   "country": "PE",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "shopstar-pe",
+   "name": "Shopstar",
+   "kind": "store",
+   "domain": "shopstar.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "juntoz-pe",
+   "name": "Juntoz",
+   "kind": "store",
+   "domain": "juntoz.com",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@ropa",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolibre-pe",
+   "name": "Mercado Libre Perú",
+   "kind": "store",
+   "domain": "mercadolibre.com.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "impacto-pe",
+   "name": "Impacto",
+   "kind": "store",
+   "domain": "impacto.com.pe",
+   "country": "PE",
+   "cats": [
+    "@tech",
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "memorykings-pe",
+   "name": "Memory Kings",
+   "kind": "store",
+   "domain": "memorykings.pe",
+   "country": "PE",
+   "cats": [
+    "@pc",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "infotec-pe",
+   "name": "Infotec",
+   "kind": "store",
+   "domain": "infotec.com.pe",
+   "country": "PE",
+   "cats": [
+    "@pc",
+    "laptops",
+    "monitores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ishop-pe",
+   "name": "iShop Perú",
+   "kind": "store",
+   "domain": "ishop.com.pe",
+   "country": "PE",
+   "cats": [
+    "laptops",
+    "celulares",
+    "audio"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "tailoy-pe",
+   "name": "Tai Loy",
+   "kind": "store",
+   "domain": "tailoy.com.pe",
+   "country": "PE",
+   "cats": [
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "topitop-pe",
+   "name": "Topitop",
+   "kind": "store",
+   "domain": "topitop.com.pe",
+   "country": "PE",
+   "cats": [
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "platanitos-pe",
+   "name": "Platanitos",
+   "kind": "store",
+   "domain": "platanitos.com",
+   "country": "PE",
+   "cats": [
+    "@ropa",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ripley-cl",
+   "name": "Ripley Chile",
+   "kind": "store",
+   "domain": "ripley.cl",
+   "country": "CL",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "paris-cl",
+   "name": "Paris",
+   "kind": "store",
+   "domain": "paris.cl",
+   "country": "CL",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "lider-cl",
+   "name": "Lider",
+   "kind": "store",
+   "domain": "lider.cl",
+   "country": "CL",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "pcfactory-cl",
+   "name": "PC Factory",
+   "kind": "store",
+   "domain": "pcfactory.cl",
+   "country": "CL",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "solotodo-cl",
+   "name": "SoloTodo",
+   "kind": "store",
+   "domain": "solotodo.cl",
+   "country": "CL",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "sodimac-cl",
+   "name": "Sodimac Chile",
+   "kind": "store",
+   "domain": "sodimac.cl",
+   "country": "CL",
+   "cats": [
+    "@electro",
+    "televisores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "hites-cl",
+   "name": "Hites",
+   "kind": "store",
+   "domain": "hites.com",
+   "country": "CL",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "abcdin-cl",
+   "name": "AbcDin",
+   "kind": "store",
+   "domain": "abcdin.cl",
+   "country": "CL",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "jumbo-cl",
+   "name": "Jumbo Chile",
+   "kind": "store",
+   "domain": "jumbo.cl",
+   "country": "CL",
+   "cats": [
+    "@alimentos",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "tottus-cl",
+   "name": "Tottus Chile",
+   "kind": "store",
+   "domain": "tottus.cl",
+   "country": "CL",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolibre-cl",
+   "name": "Mercado Libre Chile",
+   "kind": "store",
+   "domain": "mercadolibre.cl",
+   "country": "CL",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "exito-co",
+   "name": "Éxito",
+   "kind": "store",
+   "domain": "exito.com",
+   "country": "CO",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech",
+    "@ropa",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "alkosto-co",
+   "name": "Alkosto",
+   "kind": "store",
+   "domain": "alkosto.com",
+   "country": "CO",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ktronix-co",
+   "name": "Ktronix",
+   "kind": "store",
+   "domain": "ktronix.com",
+   "country": "CO",
+   "cats": [
+    "@tech",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "falabella-co",
+   "name": "Falabella Colombia",
+   "kind": "store",
+   "domain": "falabella.com.co",
+   "country": "CO",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "homecenter-co",
+   "name": "Homecenter Colombia",
+   "kind": "store",
+   "domain": "homecenter.com.co",
+   "country": "CO",
+   "cats": [
+    "@electro",
+    "televisores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolibre-co",
+   "name": "Mercado Libre Colombia",
+   "kind": "store",
+   "domain": "mercadolibre.com.co",
+   "country": "CO",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "liverpool-mx",
+   "name": "Liverpool",
+   "kind": "store",
+   "domain": "liverpool.com.mx",
+   "country": "MX",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "coppel-mx",
+   "name": "Coppel",
+   "kind": "store",
+   "domain": "coppel.com",
+   "country": "MX",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@ropa",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "elektra-mx",
+   "name": "Elektra",
+   "kind": "store",
+   "domain": "elektra.com.mx",
+   "country": "MX",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "cyberpuerta-mx",
+   "name": "Cyberpuerta",
+   "kind": "store",
+   "domain": "cyberpuerta.mx",
+   "country": "MX",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ddtech-mx",
+   "name": "DD Tech",
+   "kind": "store",
+   "domain": "ddtech.mx",
+   "country": "MX",
+   "cats": [
+    "@pc",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "digitalife-mx",
+   "name": "Digitalife",
+   "kind": "store",
+   "domain": "digitalife.com.mx",
+   "country": "MX",
+   "cats": [
+    "@pc",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "walmart-mx",
+   "name": "Walmart México",
+   "kind": "store",
+   "domain": "walmart.com.mx",
+   "country": "MX",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "costco-mx",
+   "name": "Costco México",
+   "kind": "store",
+   "domain": "costco.com.mx",
+   "country": "MX",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@alimentos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolibre-mx",
+   "name": "Mercado Libre México",
+   "kind": "store",
+   "domain": "mercadolibre.com.mx",
+   "country": "MX",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "officedepot-mx",
+   "name": "Office Depot México",
+   "kind": "store",
+   "domain": "officedepot.com.mx",
+   "country": "MX",
+   "cats": [
+    "@tech",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "fravega-ar",
+   "name": "Frávega",
+   "kind": "store",
+   "domain": "fravega.com",
+   "country": "AR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "musimundo-ar",
+   "name": "Musimundo",
+   "kind": "store",
+   "domain": "musimundo.com",
+   "country": "AR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "compragamer-ar",
+   "name": "Compra Gamer",
+   "kind": "store",
+   "domain": "compragamer.com",
+   "country": "AR",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "cetrogar-ar",
+   "name": "Cetrogar",
+   "kind": "store",
+   "domain": "cetrogar.com.ar",
+   "country": "AR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "megatone-ar",
+   "name": "Megatone",
+   "kind": "store",
+   "domain": "megatone.net",
+   "country": "AR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolibre-ar",
+   "name": "Mercado Libre Argentina",
+   "kind": "store",
+   "domain": "mercadolibre.com.ar",
+   "country": "AR",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "kabum-br",
+   "name": "KaBuM!",
+   "kind": "store",
+   "domain": "kabum.com.br",
+   "country": "BR",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "terabyte-br",
+   "name": "TerabyteShop",
+   "kind": "store",
+   "domain": "terabyteshop.com.br",
+   "country": "BR",
+   "cats": [
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "pichau-br",
+   "name": "Pichau",
+   "kind": "store",
+   "domain": "pichau.com.br",
+   "country": "BR",
+   "cats": [
+    "@pc",
+    "laptops",
+    "monitores"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "magalu-br",
+   "name": "Magazine Luiza",
+   "kind": "store",
+   "domain": "magazineluiza.com.br",
+   "country": "BR",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "americanas-br",
+   "name": "Americanas",
+   "kind": "store",
+   "domain": "americanas.com.br",
+   "country": "BR",
+   "cats": [
+    "@electro",
+    "@tech",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "casasbahia-br",
+   "name": "Casas Bahia",
+   "kind": "store",
+   "domain": "casasbahia.com.br",
+   "country": "BR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "fastshop-br",
+   "name": "Fast Shop",
+   "kind": "store",
+   "domain": "fastshop.com.br",
+   "country": "BR",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mercadolivre-br",
+   "name": "Mercado Livre",
+   "kind": "store",
+   "domain": "mercadolivre.com.br",
+   "country": "BR",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "pccomponentes-es",
+   "name": "PcComponentes",
+   "kind": "store",
+   "domain": "pccomponentes.com",
+   "country": "ES",
+   "cats": [
+    "@pc",
+    "@tech",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "coolmod-es",
+   "name": "Coolmod",
+   "kind": "store",
+   "domain": "coolmod.com",
+   "country": "ES",
+   "cats": [
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "mediamarkt-es",
+   "name": "MediaMarkt España",
+   "kind": "store",
+   "domain": "mediamarkt.es",
+   "country": "ES",
+   "cats": [
+    "@tech",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "elcorteingles-es",
+   "name": "El Corte Inglés",
+   "kind": "store",
+   "domain": "elcorteingles.es",
+   "country": "ES",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "amazon-es",
+   "name": "Amazon España",
+   "kind": "store",
+   "domain": "amazon.es",
+   "country": "ES",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "fnac-es",
+   "name": "Fnac España",
+   "kind": "store",
+   "domain": "fnac.es",
+   "country": "ES",
+   "cats": [
+    "@tech",
+    "consolas",
+    "videojuegos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "worten-es",
+   "name": "Worten España",
+   "kind": "store",
+   "domain": "worten.es",
+   "country": "ES",
+   "cats": [
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "carrefour-es",
+   "name": "Carrefour España",
+   "kind": "store",
+   "domain": "carrefour.es",
+   "country": "ES",
+   "cats": [
+    "@alimentos",
+    "@electro",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "bestbuy-us",
+   "name": "Best Buy",
+   "kind": "store",
+   "domain": "bestbuy.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "newegg-us",
+   "name": "Newegg",
+   "kind": "store",
+   "domain": "newegg.com",
+   "country": "US",
+   "cats": [
+    "@pc",
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "bhphoto-us",
+   "name": "B&H Photo",
+   "kind": "store",
+   "domain": "bhphotovideo.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "microcenter-us",
+   "name": "Micro Center",
+   "kind": "store",
+   "domain": "microcenter.com",
+   "country": "US",
+   "cats": [
+    "@pc",
+    "laptops"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "adorama-us",
+   "name": "Adorama",
+   "kind": "store",
+   "domain": "adorama.com",
+   "country": "US",
+   "cats": [
+    "@tech"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "amazon-us",
+   "name": "Amazon US",
+   "kind": "store",
+   "domain": "amazon.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@pc",
+    "@electro",
+    "@juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "walmart-us",
+   "name": "Walmart US",
+   "kind": "store",
+   "domain": "walmart.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@alimentos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "target-us",
+   "name": "Target",
+   "kind": "store",
+   "domain": "target.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@juguetes",
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "costco-us",
+   "name": "Costco US",
+   "kind": "store",
+   "domain": "costco.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@electro",
+    "@alimentos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "ebay-us",
+   "name": "eBay",
+   "kind": "store",
+   "domain": "ebay.com",
+   "country": "US",
+   "cats": [
+    "@tech",
+    "@pc"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "gamestop-us",
+   "name": "GameStop",
+   "kind": "store",
+   "domain": "gamestop.com",
+   "country": "US",
+   "cats": [
+    "consolas",
+    "videojuegos"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "lego-us",
+   "name": "LEGO",
+   "kind": "store",
+   "domain": "lego.com",
+   "country": "US",
+   "cats": [
+    "construccion",
+    "juguetes"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "nike-us",
+   "name": "Nike",
+   "kind": "store",
+   "domain": "nike.com",
+   "country": "US",
+   "cats": [
+    "calzado",
+    "deportiva"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "adidas-us",
+   "name": "adidas",
+   "kind": "store",
+   "domain": "adidas.com",
+   "country": "US",
+   "cats": [
+    "calzado",
+    "deportiva"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "zara-us",
+   "name": "Zara",
+   "kind": "store",
+   "domain": "zara.com",
+   "country": "US",
+   "cats": [
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "hm-us",
+   "name": "H&M",
+   "kind": "store",
+   "domain": "hm.com",
+   "country": "US",
+   "cats": [
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "uniqlo-us",
+   "name": "Uniqlo",
+   "kind": "store",
+   "domain": "uniqlo.com",
+   "country": "US",
+   "cats": [
+    "@ropa"
+   ],
+   "status": "unverified"
+  },
+  {
+   "id": "asos-us",
+   "name": "ASOS",
+   "kind": "store",
+   "domain": "asos.com",
+   "country": "US",
+   "cats": [
+    "@ropa"
+   ],
+   "status": "unverified"
+  }
+ ]
+}

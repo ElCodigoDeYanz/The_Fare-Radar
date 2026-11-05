@@ -1,0 +1,50 @@
+{
+  "notice": "SYNTHETIC FIXTURE. Not an airline, bus or store offer; not bookable or purchasable; no real availability, baggage or stock claim.",
+  "provider": "yanz-synthetic-v1",
+  "price_per_traveler_cents": {
+    "baseline": 42000,
+    "drop": 31000,
+    "expired": 28000,
+    "different_conditions": 27000,
+    "missing_conditions": 26000
+  },
+  "conditions": {
+    "flight_reference": "DEMO-101",
+    "fare_reference": "SYNTH-ECONOMY-1",
+    "checked_bags_per_person": 0,
+    "cabin_bags_per_person": 1,
+    "refundability": "synthetic-non-refundable",
+    "changes": "synthetic-no-changes"
+  },
+  "bus": {
+    "price_per_passenger_cents": {
+      "baseline": 9000,
+      "drop": 6500,
+      "expired": 6000,
+      "different_conditions": 5500,
+      "missing_conditions": 5000
+    },
+    "conditions": {
+      "trip_reference": "DEMO-BUS-1",
+      "operator": "Synthetic Bus Co",
+      "fare_class": "synthetic-semicama",
+      "refundability": "synthetic-non-refundable"
+    }
+  },
+  "product": {
+    "price_cents": {
+      "baseline": 259900,
+      "drop": 199900,
+      "expired": 189900,
+      "different_conditions": 179900,
+      "missing_conditions": 169900,
+      "out_of_stock": 149900
+    },
+    "conditions": {
+      "product_ref": "set-per-watch",
+      "seller": "synthetic-store",
+      "condition": "new",
+      "availability": "in_stock"
+    }
+  }
+}

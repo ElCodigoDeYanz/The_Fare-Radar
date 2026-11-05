@@ -1,0 +1,570 @@
+{
+  "synthetic": true,
+  "live_flight_connections": false,
+  "telegram_messages_sent": 0,
+  "transport": "TestClient for API evidence; service clock explicitly advanced without sleep",
+  "results": [
+    {
+      "query_id": "a45ad5aa-dab3-4dfd-a91c-0269a9a803ce",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "9874dc2b-cbfa-4317-a404-ba5dfa94f8cf",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 42000,
+            "currency": "USD",
+            "expires_at": 1793881800.0,
+            "seconds_since_last_alert": null,
+            "comparable_count": 0,
+            "minimum_cents": null,
+            "average_cents": null,
+            "median_cents": null,
+            "history_sightings": 0,
+            "history_span_s": 0,
+            "change_percent": null,
+            "note": "Sin observación previa con condiciones equivalentes.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": []
+            }
+          },
+          "alert_eligible": false,
+          "priority": null,
+          "reason": "Precio total superior al objetivo.",
+          "expired": false
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "query_id": "172617af-83da-4881-af15-ab7922a3b330",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "25599ff5-a446-4c04-bf53-32ef06c31b94",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 31000,
+            "currency": "USD",
+            "expires_at": 1793881800.0,
+            "seconds_since_last_alert": null,
+            "comparable_count": 1,
+            "minimum_cents": 42000,
+            "average_cents": 42000.0,
+            "median_cents": 42000,
+            "history_sightings": 1,
+            "history_span_s": 6.0,
+            "change_percent": -26.19,
+            "note": "Comparación solo con observaciones de iguales pasajeros, fechas, moneda, itinerario y condiciones conocidas.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": [
+                "Historial insuficiente (1 confirmaciones en 0.0 h; se piden 6 en 1.0 h)."
+              ]
+            }
+          },
+          "alert_eligible": true,
+          "priority": "objetivo",
+          "reason": "Precio total observado menor o igual al objetivo configurado; verificar con el proveedor.",
+          "expired": false
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "query_id": "9af17942-0017-49b2-b652-35181989394b",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "25599ff5-a446-4c04-bf53-32ef06c31b94",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 31000,
+            "currency": "USD",
+            "expires_at": 1793881800.0,
+            "seconds_since_last_alert": 6.0,
+            "comparable_count": 1,
+            "minimum_cents": 42000,
+            "average_cents": 42000.0,
+            "median_cents": 42000,
+            "history_sightings": 1,
+            "history_span_s": 12.0,
+            "change_percent": -26.19,
+            "note": "Comparación solo con observaciones de iguales pasajeros, fechas, moneda, itinerario y condiciones conocidas.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": [
+                "Historial insuficiente (1 confirmaciones en 0.0 h; se piden 6 en 1.0 h)."
+              ]
+            }
+          },
+          "alert_eligible": false,
+          "priority": null,
+          "reason": "Cooldown de 30 minutos activo.",
+          "expired": false
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "query_id": "4df66c84-09c1-4509-b775-699c0651ae39",
+      "status": "error",
+      "error": "Fallo de proveedor simulado. No se recibió un precio actualizado.",
+      "error_kind": "provider",
+      "retry_after": null,
+      "http_status": null,
+      "url": null,
+      "synthetic": true
+    },
+    {
+      "query_id": "ded8606a-d8e0-4092-9666-fa0ae6f410fe",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "9ef46cbc-8a7a-4647-a77e-9f039e0dfa27",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 28000,
+            "currency": "USD",
+            "expires_at": 1793881577.1868618,
+            "seconds_since_last_alert": 18.0,
+            "comparable_count": 2,
+            "minimum_cents": 31000,
+            "average_cents": 36500.0,
+            "median_cents": 31000,
+            "history_sightings": 3,
+            "history_span_s": 24.0,
+            "change_percent": -9.68,
+            "note": "Comparación solo con observaciones de iguales pasajeros, fechas, moneda, itinerario y condiciones conocidas.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": [
+                "Historial insuficiente (3 confirmaciones en 0.0 h; se piden 6 en 1.0 h)."
+              ]
+            }
+          },
+          "alert_eligible": false,
+          "priority": null,
+          "reason": "La oferta observada está caducada.",
+          "expired": true
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "query_id": "b193c96d-7c97-4c72-8cc9-bf37553e53e6",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "77568748-b22f-43db-a63f-c0c702952f21",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 27000,
+            "currency": "USD",
+            "expires_at": 1793881800.0,
+            "seconds_since_last_alert": 24.0,
+            "comparable_count": 0,
+            "minimum_cents": null,
+            "average_cents": null,
+            "median_cents": null,
+            "history_sightings": 0,
+            "history_span_s": 0,
+            "change_percent": null,
+            "note": "Sin observación previa con condiciones equivalentes.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": []
+            }
+          },
+          "alert_eligible": false,
+          "priority": null,
+          "reason": "Cooldown de 30 minutos activo.",
+          "expired": false
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "query_id": "b404ec10-7037-4025-9d94-2ab44eb15283",
+      "status": "success",
+      "observations": [
+        {
+          "observation_id": "1fe4e81a-7d6e-4552-a2cb-f55799caf8c4",
+          "analytics": {
+            "availability": "n/a",
+            "current_total_cents": 26000,
+            "currency": "USD",
+            "expires_at": 1793881800.0,
+            "seconds_since_last_alert": 30.0,
+            "comparable_count": 0,
+            "minimum_cents": null,
+            "average_cents": null,
+            "median_cents": null,
+            "history_sightings": 0,
+            "history_span_s": 0,
+            "change_percent": null,
+            "note": "Condiciones incompletas: no se compara como tarifa equivalente.",
+            "priority": {
+              "tier": null,
+              "rank": 0,
+              "drop_percent": null,
+              "margin_percent": null,
+              "reference_cents": null,
+              "reference": null,
+              "suspect_error": false,
+              "peer_count": 0,
+              "best_peer_cents": null,
+              "reasons": []
+            }
+          },
+          "alert_eligible": false,
+          "priority": null,
+          "reason": "Cooldown de 30 minutos activo.",
+          "expired": false
+        }
+      ],
+      "synthetic": true
+    }
+  ],
+  "history": {
+    "queries": [
+      {
+        "id": "b404ec10-7037-4025-9d94-2ab44eb15283",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881590.1868618,
+        "finished_at": 1793881590.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "b193c96d-7c97-4c72-8cc9-bf37553e53e6",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881584.1868618,
+        "finished_at": 1793881584.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "ded8606a-d8e0-4092-9666-fa0ae6f410fe",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881578.1868618,
+        "finished_at": 1793881578.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "4df66c84-09c1-4509-b775-699c0651ae39",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881572.1868618,
+        "finished_at": 1793881572.1868618,
+        "status": "error",
+        "error": "Fallo de proveedor simulado. No se recibió un precio actualizado.",
+        "error_kind": "provider",
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "9af17942-0017-49b2-b652-35181989394b",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881566.1868618,
+        "finished_at": 1793881566.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "172617af-83da-4881-af15-ab7922a3b330",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881560.1868618,
+        "finished_at": 1793881560.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      },
+      {
+        "id": "a45ad5aa-dab3-4dfd-a91c-0269a9a803ce",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "started_at": 1793881554.1868618,
+        "finished_at": 1793881554.1868618,
+        "status": "success",
+        "error": null,
+        "error_kind": null,
+        "egress": null,
+        "http_status": null
+      }
+    ],
+    "observations": [
+      {
+        "id": "1fe4e81a-7d6e-4552-a2cb-f55799caf8c4",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "provider": "yanz-synthetic-v1",
+        "provider_observation_id": "9f3235bca7f1e741c99079ba50c181235580b6b525df9d4446a0df7355d84be6",
+        "observed_at": 1793881590.1868618,
+        "expires_at": 1793881800.0,
+        "currency": "USD",
+        "total_cents": 26000,
+        "criteria_json": "{\"adults\":1,\"airlines\":[],\"cabin\":\"ECONOMY\",\"children\":0,\"currency\":\"USD\",\"departure\":\"2026-12-20\",\"destination\":\"MAD\",\"infants\":0,\"kind\":\"flight\",\"max_connections\":1,\"origin\":\"LIM\",\"return_date\":null}",
+        "conditions_json": "{\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": null, \"fare_reference\": null, \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}",
+        "comparison_key": null,
+        "source": "Synthetic fixture: demo/offers.json",
+        "synthetic": 1,
+        "conditions": {
+          "cabin": "ECONOMY",
+          "cabin_bags_per_person": 1,
+          "changes": "synthetic-no-changes",
+          "checked_bags_per_person": null,
+          "fare_reference": null,
+          "flight_reference": "DEMO-101",
+          "refundability": "synthetic-non-refundable"
+        },
+        "expired": false,
+        "analytics": {
+          "availability": "n/a",
+          "current_total_cents": 26000,
+          "currency": "USD",
+          "expires_at": 1793881800.0,
+          "seconds_since_last_alert": null,
+          "comparable_count": 0,
+          "minimum_cents": null,
+          "average_cents": null,
+          "median_cents": null,
+          "history_sightings": 0,
+          "history_span_s": 0,
+          "change_percent": null,
+          "note": "Condiciones incompletas: no se compara como tarifa equivalente."
+        }
+      },
+      {
+        "id": "77568748-b22f-43db-a63f-c0c702952f21",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "provider": "yanz-synthetic-v1",
+        "provider_observation_id": "eaa1ac4fe31c419bc5e7ac955f35dc3f561a9bdc1d9ef91388534b76da93efcb",
+        "observed_at": 1793881584.1868618,
+        "expires_at": 1793881800.0,
+        "currency": "USD",
+        "total_cents": 27000,
+        "criteria_json": "{\"adults\":1,\"airlines\":[],\"cabin\":\"ECONOMY\",\"children\":0,\"currency\":\"USD\",\"departure\":\"2026-12-20\",\"destination\":\"MAD\",\"infants\":0,\"kind\":\"flight\",\"max_connections\":1,\"origin\":\"LIM\",\"return_date\":null}",
+        "conditions_json": "{\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": 1, \"fare_reference\": \"SYNTH-OTHER-FARE\", \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}",
+        "comparison_key": "ff2f4ad3d7f70c2ed9ae85dce3402f88745f5df77116af8a2cb5694fe7a0b6ec",
+        "source": "Synthetic fixture: demo/offers.json",
+        "synthetic": 1,
+        "conditions": {
+          "cabin": "ECONOMY",
+          "cabin_bags_per_person": 1,
+          "changes": "synthetic-no-changes",
+          "checked_bags_per_person": 1,
+          "fare_reference": "SYNTH-OTHER-FARE",
+          "flight_reference": "DEMO-101",
+          "refundability": "synthetic-non-refundable"
+        },
+        "expired": false,
+        "analytics": {
+          "availability": "n/a",
+          "current_total_cents": 27000,
+          "currency": "USD",
+          "expires_at": 1793881800.0,
+          "seconds_since_last_alert": null,
+          "comparable_count": 0,
+          "minimum_cents": null,
+          "average_cents": null,
+          "median_cents": null,
+          "history_sightings": 0,
+          "history_span_s": 0,
+          "change_percent": null,
+          "note": "Sin observación previa con condiciones equivalentes."
+        }
+      },
+      {
+        "id": "9ef46cbc-8a7a-4647-a77e-9f039e0dfa27",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "provider": "yanz-synthetic-v1",
+        "provider_observation_id": "20e9a49a6c7dbed73cd63aa07ff53d634482ee0bd68f23b9ac1e03c40ab1811d",
+        "observed_at": 1793881578.1868618,
+        "expires_at": 1793881577.1868618,
+        "currency": "USD",
+        "total_cents": 28000,
+        "criteria_json": "{\"adults\":1,\"airlines\":[],\"cabin\":\"ECONOMY\",\"children\":0,\"currency\":\"USD\",\"departure\":\"2026-12-20\",\"destination\":\"MAD\",\"infants\":0,\"kind\":\"flight\",\"max_connections\":1,\"origin\":\"LIM\",\"return_date\":null}",
+        "conditions_json": "{\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": 0, \"fare_reference\": \"SYNTH-ECONOMY-1\", \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}",
+        "comparison_key": "adb34ebee93d5419d59a36e5b4c47dc1979ae2a4be8aaef96a7970fc2198d4d1",
+        "source": "Synthetic fixture: demo/offers.json",
+        "synthetic": 1,
+        "conditions": {
+          "cabin": "ECONOMY",
+          "cabin_bags_per_person": 1,
+          "changes": "synthetic-no-changes",
+          "checked_bags_per_person": 0,
+          "fare_reference": "SYNTH-ECONOMY-1",
+          "flight_reference": "DEMO-101",
+          "refundability": "synthetic-non-refundable"
+        },
+        "expired": false,
+        "analytics": {
+          "availability": "n/a",
+          "current_total_cents": 28000,
+          "currency": "USD",
+          "expires_at": 1793881577.1868618,
+          "seconds_since_last_alert": null,
+          "comparable_count": 2,
+          "minimum_cents": 31000,
+          "average_cents": 36500.0,
+          "median_cents": 31000,
+          "history_sightings": 2,
+          "history_span_s": 0,
+          "change_percent": -9.68,
+          "note": "Comparación solo con observaciones de iguales pasajeros, fechas, moneda, itinerario y condiciones conocidas."
+        }
+      },
+      {
+        "id": "25599ff5-a446-4c04-bf53-32ef06c31b94",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "provider": "yanz-synthetic-v1",
+        "provider_observation_id": "1fcc781ad3b4437a419f789af4db95e853353fa4cc9d3f51ffdaa7560cf16dd2",
+        "observed_at": 1793881560.1868618,
+        "expires_at": 1793881800.0,
+        "currency": "USD",
+        "total_cents": 31000,
+        "criteria_json": "{\"adults\":1,\"airlines\":[],\"cabin\":\"ECONOMY\",\"children\":0,\"currency\":\"USD\",\"departure\":\"2026-12-20\",\"destination\":\"MAD\",\"infants\":0,\"kind\":\"flight\",\"max_connections\":1,\"origin\":\"LIM\",\"return_date\":null}",
+        "conditions_json": "{\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": 0, \"fare_reference\": \"SYNTH-ECONOMY-1\", \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}",
+        "comparison_key": "adb34ebee93d5419d59a36e5b4c47dc1979ae2a4be8aaef96a7970fc2198d4d1",
+        "source": "Synthetic fixture: demo/offers.json",
+        "synthetic": 1,
+        "conditions": {
+          "cabin": "ECONOMY",
+          "cabin_bags_per_person": 1,
+          "changes": "synthetic-no-changes",
+          "checked_bags_per_person": 0,
+          "fare_reference": "SYNTH-ECONOMY-1",
+          "flight_reference": "DEMO-101",
+          "refundability": "synthetic-non-refundable"
+        },
+        "expired": false,
+        "analytics": {
+          "availability": "n/a",
+          "current_total_cents": 31000,
+          "currency": "USD",
+          "expires_at": 1793881800.0,
+          "seconds_since_last_alert": null,
+          "comparable_count": 1,
+          "minimum_cents": 42000,
+          "average_cents": 42000.0,
+          "median_cents": 42000,
+          "history_sightings": 1,
+          "history_span_s": 0,
+          "change_percent": -26.19,
+          "note": "Comparación solo con observaciones de iguales pasajeros, fechas, moneda, itinerario y condiciones conocidas."
+        }
+      },
+      {
+        "id": "9874dc2b-cbfa-4317-a404-ba5dfa94f8cf",
+        "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+        "provider": "yanz-synthetic-v1",
+        "provider_observation_id": "1ec4f9bd5c0025a8e90ba3034842b11f441e964f252199f53b129940da452e40",
+        "observed_at": 1793881554.1868618,
+        "expires_at": 1793881800.0,
+        "currency": "USD",
+        "total_cents": 42000,
+        "criteria_json": "{\"adults\":1,\"airlines\":[],\"cabin\":\"ECONOMY\",\"children\":0,\"currency\":\"USD\",\"departure\":\"2026-12-20\",\"destination\":\"MAD\",\"infants\":0,\"kind\":\"flight\",\"max_connections\":1,\"origin\":\"LIM\",\"return_date\":null}",
+        "conditions_json": "{\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": 0, \"fare_reference\": \"SYNTH-ECONOMY-1\", \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}",
+        "comparison_key": "adb34ebee93d5419d59a36e5b4c47dc1979ae2a4be8aaef96a7970fc2198d4d1",
+        "source": "Synthetic fixture: demo/offers.json",
+        "synthetic": 1,
+        "conditions": {
+          "cabin": "ECONOMY",
+          "cabin_bags_per_person": 1,
+          "changes": "synthetic-no-changes",
+          "checked_bags_per_person": 0,
+          "fare_reference": "SYNTH-ECONOMY-1",
+          "flight_reference": "DEMO-101",
+          "refundability": "synthetic-non-refundable"
+        },
+        "expired": false,
+        "analytics": {
+          "availability": "n/a",
+          "current_total_cents": 42000,
+          "currency": "USD",
+          "expires_at": 1793881800.0,
+          "seconds_since_last_alert": null,
+          "comparable_count": 0,
+          "minimum_cents": null,
+          "average_cents": null,
+          "median_cents": null,
+          "history_sightings": 0,
+          "history_span_s": 0,
+          "change_percent": null,
+          "note": "Sin observación previa con condiciones equivalentes."
+        }
+      }
+    ],
+    "observation_count": 5,
+    "query_count": 7
+  },
+  "alerts": [
+    {
+      "id": "989269ec-7bf4-4d01-83dd-3399ff60df2f",
+      "watch_id": "fe4c6444-086a-4be4-83b4-9e310e086744",
+      "observation_id": "25599ff5-a446-4c04-bf53-32ef06c31b94",
+      "created_at": 1793881560.1868618,
+      "channel": "simulation",
+      "status": "simulated",
+      "message": "[DEMO SINTÉTICA] LIM → MAD; salida 2026-12-20; vuelta solo ida; 1 adultos, 0 niños, 0 infantes; ECONOMY; total USD 310.00. Precio total observado menor o igual al objetivo configurado; verificar con el proveedor. Procedencia: Synthetic fixture: demo/offers.json. Condiciones: {\"cabin\": \"ECONOMY\", \"cabin_bags_per_person\": 1, \"changes\": \"synthetic-no-changes\", \"checked_bags_per_person\": 0, \"fare_reference\": \"SYNTH-ECONOMY-1\", \"flight_reference\": \"DEMO-101\", \"refundability\": \"synthetic-non-refundable\"}. El precio observado puede cambiar. No es una oferta reservable ni comprable.",
+      "error": null,
+      "attempts": 0,
+      "priority": "objetivo",
+      "priority_rank": 1
+    }
+  ]
+}
